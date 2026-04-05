@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuv Lub Khw Online</title>
+    <link rel="stylesheet" href="MK.css">
+</head>
+
+<body>
+
+<h1>🛒 Kuv Lub Khw Online</h1>
+
+<div class="product">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1psIRuSkMQmm_-PW5cI3eoTuWYMn8IOwGVHCiMoZ65CCXn2gL" width="150", height="150">
+    <h3>T-Shirt</h3>
+    <p>Nqe: $10</p>
+    <button onclick="addToCart('T-Shirt')">Yuav</button>
+</div>
+
+<div class="product">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1psIRuSkMQmm_-PW5cI3eoTuWYMn8IOwGVHCiMoZ65CCXn2gL" width="150", height="150">
+    <h3>Shoes</h3>
+    <p>Nqe: $20</p>
+    <button onclick="addToCart('Shoes')">Yuav</button>
+</div>
+
+<h2>🧺 Cart:</h2>
+<ul id="cart"></ul>
+
+<script>
+    function addToCart(product) {
+        let cart = document.getElementById("cart");
+        let item = document.createElement("li");
+        item.textContent = product;
+        cart.appendChild(item);
+    }
+</script>
+<h2>📋 Sau Order</h2>
+
+<input type="text" id="name" placeholder="Koj lub npe"><br><br>
+<input type="text" id="phone" placeholder="Xov tooj"><br><br>
+
+<h2>📋 Sau Order</h2>
+
+<a href="https://forms.gle/yjt1KSAELhhnLANaA" target="_blank">
+    <button>Xa Order</button>
+</a>
+
+</body>
+</html>

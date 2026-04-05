@@ -1,0 +1,23 @@
+body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #dce2e5;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            background: white;
+        }
+        button {
+            background: rgb(6, 146, 41);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .img-small {
+            width: 150px;
+}
